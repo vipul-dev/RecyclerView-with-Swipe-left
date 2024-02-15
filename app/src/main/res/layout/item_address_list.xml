@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_6dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_outline_bg"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/_10dp"
+        android:src="@drawable/ic_home_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvAddType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:text="Office "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_4dp"
+        android:text="H44 Sector 63 Noida Phase 2 Pincode 201301"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/tvAddType" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_6dp"
+        android:background="@color/view_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

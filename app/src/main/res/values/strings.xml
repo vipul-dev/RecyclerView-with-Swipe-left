@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerView with swipe left action</string>
+    <string name="my_recyclerview">My RecyclerView</string>
+</resources>
